@@ -14,6 +14,7 @@ class _AboutscreenState extends State<Aboutscreen> {
     return new Scaffold(
       backgroundColor: Colors.orange,
       body: Container(
+        padding: EdgeInsets.only(top: 40),
         child: SingleChildScrollView(
           physics: BouncingScrollPhysics(),
           child: Column(
@@ -34,16 +35,13 @@ class _AboutscreenState extends State<Aboutscreen> {
     return Container(
       height: 250,
       color: Colors.orangeAccent,
-      child: Card(
-        shape: RoundedRectangleBorder(
-          side: new BorderSide(color: Colors.red, width: 6.0),
-          borderRadius: BorderRadius.circular(38.0),
-        ),
+      child: Center(
+          child: Card(
         child: Image.asset(
           'images/clogo.png',
           fit: BoxFit.contain,
         ),
-      ),
+      )),
     );
   }
 

@@ -57,10 +57,6 @@ class _SplashScreenState extends State<SplashScreen> {
       child: Center(
         child: Container(
           child: Card(
-            shape: RoundedRectangleBorder(
-              side: new BorderSide(color: Colors.red, width: 6.0),
-              borderRadius: BorderRadius.circular(38.0),
-            ),
             color: Colors.orangeAccent,
             child: Image.asset(
               'images/clogo.png',
@@ -146,18 +142,15 @@ class _M1ScreenState extends State<M1Screen> {
             children: <Widget>[
               Expanded(
                 flex: 1,
-                child: Card(
-                    shape: RoundedRectangleBorder(
-                      side: new BorderSide(color: Colors.indigo, width: 6.0),
-                      borderRadius: BorderRadius.circular(38.0),
-                    ),
-                    child: Container(
-                      color: Colors.orangeAccent,
-                      child: Image.asset(
-                        'images/clogo.png',
-                        fit: BoxFit.fill,
-                      ),
-                    )),
+                child: Center(
+                    child: Card(
+                        child: Container(
+                  color: Colors.orangeAccent,
+                  child: Image.asset(
+                    'images/clogo.png',
+                    fit: BoxFit.fill,
+                  ),
+                ))),
               ),
               Expanded(
                 flex: 2,
