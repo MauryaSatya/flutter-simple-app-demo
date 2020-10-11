@@ -34,9 +34,11 @@ dependencies:
   google_fonts: ^0.3.2
   eva_icons_flutter: ^2.0.1
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+ 
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -60,7 +62,7 @@ flutter:
     - images/unionst.png
     - images/structst.png
     - images/arryst.png
-    - images/fltr.jpg
+    - images/clogo.png
     - images/fileio.png 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -86,6 +88,10 @@ flutter:
     - family: Quando.ttf
       fonts:
         - asset: fonts/Quando.ttf
+
+    - family: Baloo2-Regular
+      fonts:
+        - asset: fonts/Baloo2-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

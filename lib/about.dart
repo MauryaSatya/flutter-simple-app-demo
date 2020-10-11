@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 
@@ -10,7 +11,7 @@ class Aboutscreen extends StatefulWidget {
 class _AboutscreenState extends State<Aboutscreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return new Scaffold(
       backgroundColor: Colors.orange,
       body: Container(
         child: SingleChildScrollView(
@@ -31,13 +32,15 @@ class _AboutscreenState extends State<Aboutscreen> {
 
   Widget _buildheader() {
     return Container(
-      height: 300,
-      width: 500,
+      height: 250,
+      color: Colors.orangeAccent,
       child: Card(
-        color: Colors.blue,
-        elevation: 12,
+        shape: RoundedRectangleBorder(
+          side: new BorderSide(color: Colors.red, width: 6.0),
+          borderRadius: BorderRadius.circular(38.0),
+        ),
         child: Image.asset(
-          'images/fltr.jpg',
+          'images/clogo.png',
           fit: BoxFit.contain,
         ),
       ),
@@ -47,7 +50,6 @@ class _AboutscreenState extends State<Aboutscreen> {
   Widget _buildcard() {
     return Container(
         height: 260,
-        width: 600,
         child: Card(
             margin: EdgeInsets.all(12),
             shape: RoundedRectangleBorder(
@@ -153,3 +155,6 @@ class _AboutscreenState extends State<Aboutscreen> {
     ]);
   }
 }
+
+//  SystemChrome.setPreferredOrientations(
+//         [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);

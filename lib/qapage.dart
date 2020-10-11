@@ -5,7 +5,7 @@ import 'package:flutter/rendering.dart';
 class CardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return new Scaffold(
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

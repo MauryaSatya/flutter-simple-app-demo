@@ -6,17 +6,30 @@ import 'package:flutter_simple_application_demo/detail.dart';
 class BtnPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            new BtnScreen(),
-          ],
-        ),
-      ),
-    );
+    return MaterialApp(
+        routes: {
+          '/fourth': (context) => Intro(),
+          '/five': (context) => Requ(),
+          '/six': (context) => Stru(),
+          '/seven': (context) => Variconst(),
+          '/Eight': (context) => VarType(),
+          '/nine': (context) => DataType(),
+          '/ten': (context) => Operator(),
+          '/eleven': (context) => Decision(),
+          '/twelve': (context) => Switchop(),
+          '/thirteen': (context) => Loops(),
+          '/fourteen': (context) => Gotoop(),
+          '/fifteen': (context) => Arry(),
+          '/sixteen': (context) => Func(),
+          '/seventeen': (context) => Rec(),
+          '/eighteen': (context) => Point(),
+          '/nineteen': (context) => Struc(),
+          '/twenty': (context) => FileI(),
+          '/twenty-one': (context) => Prepro(),
+        },
+        title: "programming laungavage C",
+        debugShowCheckedModeBanner: false,
+        home: BtnScreen());
   }
 }
 
@@ -32,11 +45,13 @@ class _BtnScreenState extends State<BtnScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.blue,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.only(right: 10, top: 10, left: 10),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             ListTile(
               title: Text(
@@ -44,10 +59,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Intro()),
-                );
+                Navigator.pushNamed(context, '/fourth');
               },
             ),
             Divider(
@@ -60,10 +72,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Requ()),
-                );
+                Navigator.pushNamed(context, '/five');
               },
             ),
             Divider(
@@ -76,10 +85,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Stru()),
-                );
+                Navigator.pushNamed(context, '/six');
               },
             ),
             Divider(
@@ -92,10 +98,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Variconst()),
-                );
+                Navigator.pushNamed(context, '/seven');
               },
             ),
             Divider(
@@ -108,10 +111,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => VarType()),
-                );
+                Navigator.pushNamed(context, '/Eight');
               },
             ),
             Divider(
@@ -124,10 +124,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Prepro()),
-                );
+                Navigator.pushNamed(context, '/nine');
               },
             ),
             Divider(
@@ -140,10 +137,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Operator()),
-                );
+                Navigator.pushNamed(context, '/ten');
               },
             ),
             Divider(
@@ -156,10 +150,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Decision()),
-                );
+                Navigator.pushNamed(context, '/eleven');
               },
             ),
             Divider(
@@ -172,10 +163,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Switchop()),
-                );
+                Navigator.pushNamed(context, '/twelve');
               },
             ),
             Divider(
@@ -188,10 +176,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Loops()),
-                );
+                Navigator.pushNamed(context, '/thirteen');
               },
             ),
             Divider(
@@ -204,10 +189,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Gotoop()),
-                );
+                Navigator.pushNamed(context, '/fourteen');
               },
             ),
             Divider(
@@ -220,10 +202,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Arry()),
-                );
+                Navigator.pushNamed(context, '/fifteen');
               },
             ),
             Divider(
@@ -236,10 +215,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Func()),
-                );
+                Navigator.pushNamed(context, '/sixteen');
               },
             ),
             Divider(
@@ -252,10 +228,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Rec()),
-                );
+                Navigator.pushNamed(context, '/seventeen');
               },
             ),
             Divider(
@@ -268,10 +241,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Point()),
-                );
+                Navigator.pushNamed(context, '/eighteen');
               },
             ),
             Divider(
@@ -284,10 +254,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Struc()),
-                );
+                Navigator.pushNamed(context, '/nineteen');
               },
             ),
             Divider(
@@ -316,10 +283,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => FileI()),
-                );
+                Navigator.pushNamed(context, '/twenty');
               },
             ),
             Divider(
@@ -332,10 +296,7 @@ class _BtnScreenState extends State<BtnScreen> {
                 style: TextStyle(fontFamily: 'LexendDeca-Regular'),
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Prepro()),
-                );
+                Navigator.pushNamed(context, '/twenty-one');
               },
             ),
           ],

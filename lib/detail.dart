@@ -248,6 +248,8 @@ void main()
 ###Hello word ### """;
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -368,6 +370,8 @@ int g;
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -568,6 +572,8 @@ Roll no=204
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -737,6 +743,8 @@ class DataType extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -1026,6 +1034,8 @@ int main()
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -1664,6 +1674,8 @@ Congratulations
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -2169,6 +2181,8 @@ i++;
 1\n2\n3\n4\n5 """;
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -2449,6 +2463,8 @@ end:
     Bye !\n""";
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -2569,181 +2585,185 @@ int main()
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Array",
-          style: TextStyle(
-              fontSize: 24.0,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'LexendDeca-Regular'),
-        ),
-      ),
-      body: SingleChildScrollView(
-        child: Container(
-          child: Padding(
-            padding: EdgeInsets.only(left: 10, right: 10),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(right: 10, left: 10),
-                  child: RichText(
-                    text: TextSpan(
-                      children: <TextSpan>[
-                        TextSpan(
-                          text:
-                              "  \nArray in C is a collection of similar types of elements (Type may be an integer, float, and long, etc.). So, in C programming, we can’t store multiple data type values in an array..",
-                          style: TextStyle(
-                              color: _color1,
-                              fontFamily: 'LexendDeca-Regular',
-                              fontSize: 18),
-                        ),
-                        TextSpan(
-                            text: "\nTypes of Array in C:-",
-                            style: TextStyle(
-                                fontSize: 28.0,
-                                color: _color,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'LexendDeca-Regular')),
-                        TextSpan(
-                            text:
-                                "\n1-One Dimensional Array\n2-Two Dimensional Array\n3-Multi-Dimensional Array",
-                            style: TextStyle(
-                              fontSize: 20.0,
-                              color: Colors.red,
-                              fontFamily: 'LexendDeca-Regular',
-                            )),
-                        TextSpan(
-                            text: "\nSyntax of an Array in C",
-                            style: TextStyle(
-                              fontSize: 22.0,
-                              color: _color,
-                              fontFamily: 'LexendDeca-Regular',
-                            )),
-                        TextSpan(
-                          text:
-                              "\n1-Data_type: It will decide the type of elements array will accept. For example, If we want to store integer values then we declare the Data Type as int, If we want to store Float values then we declare the Data Type as float, etc\n2-Array_Name: This is the name you want to give it to an array. For example students, age, marks, employees, etc\n3-Array_Size: Number of elements an array can hold or store. For example, Array_Size =10, then the array will hold 10 values.",
-                          style: TextStyle(
-                              color: _color1,
-                              fontFamily: 'LexendDeca-Regular',
-                              fontSize: 18),
-                        ),
-                        TextSpan(
-                            text: "\nArray in C Initialization",
-                            style: TextStyle(
-                                fontSize: 24.0,
-                                color: _color,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'LexendDeca-Regular')),
-                        TextSpan(
-                            text: "\nFirst Approach to Initialize Array in C",
-                            style: TextStyle(
-                              fontSize: 20.0,
-                              color: _color,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'LexendDeca-Regular',
-                            )),
-                        TextSpan(
-                          text:
-                              "\nint Employees[5] = {1, 2, 3, 4, 5}\nHere, We initialized the array at the declaration time only",
-                          style: TextStyle(
-                              color: _color1,
-                              fontFamily: 'LexendDeca-Regular',
-                              fontSize: 18),
-                        ),
-                        TextSpan(
-                            text: "\nSecond Approach to Initialize Array in C",
-                            style: TextStyle(
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold,
-                              color: _color,
-                              fontFamily: 'LexendDeca-Regular',
-                            )),
-                        TextSpan(
-                          text:
-                              "int Employees[ ] = {1, 2, 3, 4, 5}\nHere, We haven’t mentioned the array size. However, the compiler is intelligent enough to calculate the size of an array in C by checking the number of elements.",
-                          style: TextStyle(
-                              color: _color1,
-                              fontFamily: 'LexendDeca-Regular',
-                              fontSize: 18),
-                        ),
-                        TextSpan(
-                            text: "\nThird Approach to Initialize Array in C",
-                            style: TextStyle(
-                              fontSize: 20.0,
-                              color: _color,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'LexendDeca-Regular',
-                            )),
-                        TextSpan(
-                          text:
-                              "\nint Employees[5] = {1, 4, 5}\nHere we declared Employees array with size 5, but we only assigned 3 variables. In this situation, the remaining values assigned to default values (0 in this case).\nExample-int Employees[5] = {1, 4, 5,0,0}",
-                          style: TextStyle(
-                              color: _color1,
-                              fontFamily: 'LexendDeca-Regular',
-                              fontSize: 18),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(),
-                  child: Column(children: [
-                    Container(
-                      padding: EdgeInsets.only(left: 20),
-                      width: 360,
-                      height: 300,
-                      child: Card(
-                        color: Colors.white70,
-                        elevation: 18,
-                        child: Center(
-                          child: new GestureDetector(
-                            child: SelectableText(_copy,
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontFamily: 'LexendDeca-Regular',
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16)),
-                            onTap: () {
-                              Clipboard.setData(new ClipboardData(text: _copy));
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.only(left: 20, bottom: 20),
-                      width: 360,
-                      height: 420,
-                      child: Card(
-                        color: Colors.white70,
-                        elevation: 18,
-                        child: Center(
-                          child: new GestureDetector(
-                            child: SelectableText(_copy1,
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontFamily: 'LexendDeca-Regular',
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 15)),
-                            onTap: () {
-                              Clipboard.setData(
-                                  new ClipboardData(text: _copy1));
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
-                  ]),
-                ),
-              ],
-            ),
+        appBar: AppBar(
+          title: Text(
+            "Array",
+            style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'LexendDeca-Regular'),
           ),
         ),
-      ),
-    );
+        body: SingleChildScrollView(
+          child: Container(
+            child: Padding(
+              padding: EdgeInsets.only(left: 1),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 5.0,
+                      right: 5.0,
+                    ),
+                    child: RichText(
+                      text: TextSpan(
+                        children: <TextSpan>[
+                          TextSpan(
+                            text:
+                                "  \nArray in C is a collection of similar types of elements (Type may be an integer, float, and long, etc.). So, in C programming, we can’t store multiple data type values in an array..",
+                            style: TextStyle(
+                                color: _color1,
+                                fontFamily: 'LexendDeca-Regular',
+                                fontSize: 18),
+                          ),
+                          TextSpan(
+                              text: "\nTypes of Array in C:-",
+                              style: TextStyle(
+                                  fontSize: 28.0,
+                                  color: _color,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'LexendDeca-Regular')),
+                          TextSpan(
+                              text:
+                                  "\n1-One Dimensional Array\n2-Two Dimensional Array\n3-Multi-Dimensional Array",
+                              style: TextStyle(
+                                fontSize: 20.0,
+                                color: Colors.red,
+                                fontFamily: 'LexendDeca-Regular',
+                              )),
+                          TextSpan(
+                              text: "\nSyntax of an Array in C",
+                              style: TextStyle(
+                                fontSize: 22.0,
+                                color: _color,
+                                fontFamily: 'LexendDeca-Regular',
+                              )),
+                          TextSpan(
+                            text:
+                                "\n1-Data_type: It will decide the type of elements array will accept. For example, If we want to store integer values then we declare the Data Type as int, If we want to store Float values then we declare the Data Type as float, etc\n2-Array_Name: This is the name you want to give it to an array. For example students, age, marks, employees, etc\n3-Array_Size: Number of elements an array can hold or store. For example, Array_Size =10, then the array will hold 10 values.",
+                            style: TextStyle(
+                                color: _color1,
+                                fontFamily: 'LexendDeca-Regular',
+                                fontSize: 18),
+                          ),
+                          TextSpan(
+                              text: "\nArray in C Initialization",
+                              style: TextStyle(
+                                  fontSize: 24.0,
+                                  color: _color,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'LexendDeca-Regular')),
+                          TextSpan(
+                              text: "\nFirst Approach to Initialize Array in C",
+                              style: TextStyle(
+                                fontSize: 20.0,
+                                color: _color,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'LexendDeca-Regular',
+                              )),
+                          TextSpan(
+                            text:
+                                "\nint Employees[5] = {1, 2, 3, 4, 5}\nHere, We initialized the array at the declaration time only",
+                            style: TextStyle(
+                                color: _color1,
+                                fontFamily: 'LexendDeca-Regular',
+                                fontSize: 18),
+                          ),
+                          TextSpan(
+                              text:
+                                  "\nSecond Approach to Initialize Array in C",
+                              style: TextStyle(
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.bold,
+                                color: _color,
+                                fontFamily: 'LexendDeca-Regular',
+                              )),
+                          TextSpan(
+                            text:
+                                "int Employees[ ] = {1, 2, 3, 4, 5}\nHere, We haven’t mentioned the array size. However, the compiler is intelligent enough to calculate the size of an array in C by checking the number of elements.",
+                            style: TextStyle(
+                                color: _color1,
+                                fontFamily: 'LexendDeca-Regular',
+                                fontSize: 18),
+                          ),
+                          TextSpan(
+                              text: "\nThird Approach to Initialize Array in C",
+                              style: TextStyle(
+                                fontSize: 20.0,
+                                color: _color,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'LexendDeca-Regular',
+                              )),
+                          TextSpan(
+                            text:
+                                "\nint Employees[5] = {1, 4, 5}\nHere we declared Employees array with size 5, but we only assigned 3 variables. In this situation, the remaining values assigned to default values (0 in this case).\nExample-int Employees[5] = {1, 4, 5,0,0}",
+                            style: TextStyle(
+                                color: _color1,
+                                fontFamily: 'LexendDeca-Regular',
+                                fontSize: 18),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(),
+                    child: Column(children: [
+                      Container(
+                        padding: EdgeInsets.only(left: 20),
+                        width: 360,
+                        height: 300,
+                        child: Card(
+                          color: Colors.white70,
+                          elevation: 18,
+                          child: Center(
+                            child: new GestureDetector(
+                              child: SelectableText(_copy,
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontFamily: 'LexendDeca-Regular',
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16)),
+                              onTap: () {
+                                Clipboard.setData(
+                                    new ClipboardData(text: _copy));
+                              },
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 20, bottom: 20),
+                        width: 360,
+                        height: 420,
+                        child: Card(
+                          color: Colors.white70,
+                          elevation: 18,
+                          child: Center(
+                            child: new GestureDetector(
+                              child: SelectableText(_copy1,
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontFamily: 'LexendDeca-Regular',
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15)),
+                              onTap: () {
+                                Clipboard.setData(
+                                    new ClipboardData(text: _copy1));
+                              },
+                            ),
+                          ),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ));
   }
 }
 
@@ -2781,6 +2801,8 @@ Output: 220
 \n """;
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -2992,6 +3014,8 @@ factorial = 120
 \n """;
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -3148,6 +3172,8 @@ Add =50
 \n """;
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -3315,6 +3341,8 @@ Stu. Name =Satya
 \n """;
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -3453,6 +3481,8 @@ class _UniState extends State<Uni> {
 memory data: 20\n """;
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -3584,6 +3614,8 @@ fp  = fopen ("data.txt", "w");
  """;
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -3796,6 +3828,8 @@ ANSI :1\n """;
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return new Scaffold(
       appBar: AppBar(
         title: Text(
@@ -3812,7 +3846,7 @@ ANSI :1\n """;
             padding: EdgeInsets.only(left: 10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.only(
