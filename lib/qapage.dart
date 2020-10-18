@@ -128,33 +128,27 @@ class _CardScreenState extends State<CardScreen> {
           ),
         );
       },
-      child: Card(
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(6),
-            side: BorderSide(color: Colors.red)),
-        margin: EdgeInsets.all(1),
-        elevation: 4.0,
-        child: Container(
-          padding: EdgeInsets.only(top: 10, bottom: 10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Row(
-                children: <Widget>[
-                  SizedBox(
-                    width: 6,
-                  ),
-                  Text(
-                    items[index].title,
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontFamily: 'LexendDeca-Regular',
-                      color: _color,
-                    ),
-                  ),
-                ],
+      child: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.all(1.5),
+          child: Card(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(6),
+                side: BorderSide(color: Colors.red)),
+            margin: EdgeInsets.all(0.8),
+            elevation: 4.0,
+            child: Container(
+              padding:
+                  EdgeInsets.only(top: 10, bottom: 10, left: 15.0, right: 15.0),
+              child: Text(
+                items[index].title,
+                style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: 'LexendDeca-Regular',
+                  color: _color,
+                ),
               ),
-            ],
+            ),
           ),
         ),
       ),
@@ -206,7 +200,7 @@ class _MyDetailPageState extends State<MyDetailPage> {
 
   Widget custemcard() {
     return Container(
-        height: 830,
+        height: MediaQuery.of(context).size.height * 1,
         color: Colors.orange,
         child: Padding(
             padding: EdgeInsets.all(1),
@@ -228,14 +222,18 @@ class _MyDetailPageState extends State<MyDetailPage> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 350),
-                  child: FloatingActionButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    child: Icon(Icons.arrow_back),
-                  ),
+                Row(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.all(15.0),
+                      child: FloatingActionButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        child: Icon(Icons.arrow_back),
+                      ),
+                    ),
+                  ],
                 )
               ],
             )));

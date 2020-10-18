@@ -27,7 +27,7 @@ class BtnPage extends StatelessWidget {
           '/twenty': (context) => FileI(),
           '/twenty-one': (context) => Prepro(),
         },
-        title: "programming laungavage C",
+        title: "C Programming Language",
         debugShowCheckedModeBanner: false,
         home: BtnScreen());
   }
@@ -46,6 +46,8 @@ class _BtnScreenState extends State<BtnScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
+        title: Text("Topics"),
+        elevation: 15.0,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.only(right: 10, top: 10, left: 10),
