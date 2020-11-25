@@ -21,60 +21,60 @@ class MyApp extends StatelessWidget {
           '/second': (context) => CardScreen(),
           '/third': (context) => Aboutscreen(),
         },
-        title: "programming laungavage C",
+        title: "programming language C",
         debugShowCheckedModeBanner: false,
-        home: SplashScreen());
+        home: M1Screen());
   }
 }
 
-class SplashScreen extends StatefulWidget {
-  @override
-  _SplashScreenState createState() => _SplashScreenState();
-}
+// class SplashScreen extends StatefulWidget {
+//   @override
+//   _SplashScreenState createState() => _SplashScreenState();
+// }
 
-class _SplashScreenState extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-    new Future.delayed(
-      Duration(seconds: 3),
-      () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => M1Screen()));
-      },
-    );
-  }
+// class _SplashScreenState extends State<SplashScreen> {
+//   @override
+//   void initState() {
+//     super.initState();
+//     new Future.delayed(
+//       Duration(seconds: 3),
+//       () {
+//         Navigator.push(
+//             context, MaterialPageRoute(builder: (context) => M1Screen()));
+//       },
+//     );
+//   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-        decoration: BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                stops: [
-              0.1,
-              0.3,
-              0.7,
-              1
-            ],
-                colors: [
-              Colors.green,
-              Colors.blue,
-              Colors.orange,
-              Colors.pink
-            ])),
-        child: Center(
-            child: Container(
-                child: Card(
-          color: Colors.orangeAccent,
-          child: Image.asset(
-            'images/clogo.png',
-            fit: BoxFit.fill,
-          ),
-        ))));
-  }
-}
+// @override
+// Widget build(BuildContext context) {
+//   return Container(
+//       decoration: BoxDecoration(
+//           gradient: LinearGradient(
+//               begin: Alignment.topLeft,
+//               end: Alignment.bottomRight,
+//               stops: [
+//             0.1,
+//             0.3,
+//             0.7,
+//             1
+//           ],
+//               colors: [
+//             Colors.green,
+//             Colors.blue,
+//             Colors.orange,
+//             Colors.pink
+//           ])),
+//       child: Center(
+//           child: Container(
+//               child: Card(
+//         color: Colors.orangeAccent,
+//         child: Image.asset(
+//           'images/clogo.png',
+//           fit: BoxFit.fill,
+//         ),
+//       ))));
+// }
+// }
 
 Color _color5 = Colors.blue[600];
 
